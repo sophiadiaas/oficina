@@ -301,4 +301,49 @@ tr:hover td {
 }
 
 
+.botao-secundario {
+    background: transparent;
+    border: 2px solid var(--cor-principal);
+    color: var(--cor-principal);
+    padding: 10px 20px;
+    border-radius: var(--raio);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botao-secundario:hover {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.ativo {
+    background-color: var(--cor-principal-escura);
+    color: white;
+    border-radius: var(--raio);
+    padding: 8px 12px;
+}
+
+
+/* MODO ESCURO AUTOMÁTICO */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-fundo: #1e1b2e;
+        --cor-cartao: #302b40;
+        --cor-texto: #f8fafc;
+        --cor-principal: #7c3aed;
+        --cor-principal-escura: #5b21b6;
+    }
+}
+
+
+
+.caixa-login a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.caixa-login a:hover {
+    text-decoration: underline;
+}
 
